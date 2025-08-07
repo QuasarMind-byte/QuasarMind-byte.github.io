@@ -1,6 +1,8 @@
-baseURL: https://example.org/
+baseURL: https://quasarmind-byte.github.io/
 languageCode: en-us
 title: My static Docs
+relativeURLs: true
+canonifyURLs: true
 
 # 允许渲染原始HTML
 markup:
