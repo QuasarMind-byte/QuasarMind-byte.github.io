@@ -1,4 +1,4 @@
-baseURL: https://quasarmind-byte.github.io/
+baseURL: http://example.com/
 languageCode: en-us
 title: My static Docs
 relativeURLs: true
