@@ -68,6 +68,9 @@ params:
   # 
   page:
     width: wide
+  # 
+  footer:
+    displayCopyright: true
 
 # enable icon
 enableInlineShortcodes: true
