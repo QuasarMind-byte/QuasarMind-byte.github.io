@@ -13,7 +13,7 @@ layout: hextra-home
 {{<center-container>}}{{<icon name="cube-transparent" >}} {{<typewriter color="purple">}}{{</center-container>}}
 
 
-<div class="home-section" style="align-items: center; margin-left: 2rem">
+<div class="home-section" style="align-items: center; margin-left: 1.5rem">
 {{<hextra/hero-headline>}}🎨Hello-Docs{{</hextra/hero-headline>}}
 {{<hextra/hero-subtitle>}}极速且全能的Hugo主题框架{{</hextra/hero-subtitle>}}
 <br>
