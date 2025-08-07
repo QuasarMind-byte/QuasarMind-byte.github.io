@@ -8,7 +8,7 @@ layout: hextra-home
 
 </br>
 
-{{<center-container>}}{{<avatar src="/images/avatar.webp" name="Jay YI" text="个人技术成长记录|项目实践|学习笔记 link="link="https://github.com/QuasarMind-byte/">}}{{</center-container>}}
+{{<center-container>}}{{<avatar src="https://cdn.jsdelivr.net/gh/QuasarMind-byte/QuasarMind-byte.github.io@main/static/images/avatar.webp" name="Jay YI" text="个人技术成长记录|项目实践|学习笔记 link="link="https://github.com/QuasarMind-byte/">}}{{</center-container>}}
 
 {{<center-container>}}{{<icon name="cube-transparent" >}} {{<typewriter color="purple">}}{{</center-container>}}
 
