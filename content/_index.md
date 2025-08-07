@@ -8,7 +8,7 @@ layout: hextra-home
 
 </br>
 
-{{<center-container>}}{{<avatar src="/images/avatar.png" name="Jay YI" text="个人技术成长记录|项目实践|学习笔记 link="link="https://github.com/QuasarMind-byte/">}}{{</center-container>}}
+{{<center-container>}}{{<avatar src="/images/avatar.webp" name="Jay YI" text="个人技术成长记录|项目实践|学习笔记 link="link="https://github.com/QuasarMind-byte/">}}{{</center-container>}}
 
 {{<center-container>}}{{<icon name="cube-transparent" >}} {{<typewriter color="purple">}}{{</center-container>}}
 
@@ -40,7 +40,7 @@ I'm a `developer` and `explorer` who learns full-stack development. Committed to
 </br>
 </br>
 {{<hextra/feature-grid>}}{{<hextra/feature-card title="🎬前端" subtitle="前端技术学习记录</br> HTML/CSS   ` |` JavaScript `|` Vue " class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]" style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));">}} {{<hextra/feature-card title="🚀后端" subtitle="后端技术学习记录 </br>Java` |` Go` |` Mysql `|` Spring" class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]" style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));">}}
-{{<hextra/feature-card title="🌟项目Start" subtitle="项目架构</br>参观 `Github`" class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]" style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));">}}
+{{<hextra/feature-card title="🌟项目Star" subtitle="项目架构</br>参观 `Github`" class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]" style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));">}}
 {{<hextra/feature-card title="♊书籍阅读" subtitle="阅读书籍记录" >}}
 {{<hextra/feature-card title="🧭美图" subtitle="美图记录" >}}
 {{<hextra/feature-card title="🗺️杂记" subtitle="日常生活记录" >}}
