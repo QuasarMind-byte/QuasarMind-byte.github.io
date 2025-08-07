@@ -1,0 +1,127 @@
+{{ $text := .Get "text" | default "🎉个人技术成长记录|项目实践|学习笔记✨" }}
+{{ $speed := .Get "speed" | default 100 }}
+{{ $delay := .Get "delay" | default 500 }}
+{{ $cursor := .Get "cursor" | default "|" }}
+{{ $color := .Get "color" | default "#333" }}
+{{ $font := .Get "font" | default "monospace" }}
+{{ $size := .Get "size" | default "1.2rem" }}
+{{ $class := .Get "class" | default "" }}
+
+<div class="typewriter-container hx:from-gray-900 hx:to-gray-600 hx:dark:from-gray-100 hx:dark:to-gray-400 {{ $class }}"
+  data-text="{{ $text }}" data-speed="{{ $speed }}" data-delay="{{ $delay }}" data-cursor="{{ $cursor }}"
+  style="color: {{ $color }}; font-family: {{ $font }}; font-size: {{ $size }};">
+  <span class="typewriter-text"></span>
+  <span class="typewriter-cursor">{{ $cursor }}</span>
+</div>
+
+<style>
+  .typewriter-container {
+    display: inline-block;
+    padding: 0.5rem;
+    min-height: 1.5em;
+    line-height: 1.5;
+  }
+
+  .typewriter-text {
+    display: inline;
+    white-space: pre-wrap;
+  }
+
+  .typewriter-cursor {
+    display: inline-block;
+    animation: blink 0.7s infinite;
+    font-weight: bold;
+    margin-left: 2px;
+  }
+
+  @keyframes blink {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* 主题样式 */
+  .typewriter-theme-dark {
+    background-color: #2fed58;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .typewriter-theme-light {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+  }
+
+  .typewriter-theme-highlight {
+    background: linear-gradient(90deg, #ffecd2, #fcb69f);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .typewriter-neon {
+    color: #fff;
+    text-shadow:
+      0 0 5px #0ff,
+      0 0 10px #0ff,
+      0 0 20px #0ff;
+  }
+
+  .typewriter-neon .typewriter-cursor {
+    text-shadow:
+      0 0 5px #f0f,
+      0 0 10px #f0f,
+      0 0 20px #f0f;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const containers = document.querySelectorAll('.typewriter-container');
+
+    containers.forEach(container => {
+      const text = container.dataset.text;
+      const speed = parseInt(container.dataset.speed);
+      const delay = parseInt(container.dataset.delay);
+      const cursor = container.dataset.cursor;
+      const textElement = container.querySelector('.typewriter-text');
+      const cursorElement = container.querySelector('.typewriter-cursor');
+
+      // 设置光标字符
+      cursorElement.textContent = cursor;
+
+      // 打字机效果函数
+      function typeWriterEffect() {
+        let i = 0;
+        let currentText = '';
+
+        function type() {
+          if (i < text.length) {
+            // 添加下一个字符
+            currentText += text.charAt(i);
+            textElement.textContent = currentText;
+            i++;
+            setTimeout(type, speed);
+          } else {
+            // 打字完成，保持光标闪烁
+          }
+        }
+
+        // 初始延迟
+        setTimeout(type, delay);
+      }
+
+      // 初始化效果
+      typeWriterEffect();
+    });
+  });
+</script>

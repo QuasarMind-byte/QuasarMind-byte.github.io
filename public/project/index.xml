@@ -1,0 +1,19 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My static Docs – 🎯项目|推荐</title>
+    <link>http://localhost:1313/project/</link>
+    <description>Recent content in 🎯项目|推荐 on My static Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Aug 2025 14:18:17 +0800</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

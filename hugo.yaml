@@ -1,0 +1,81 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: My static Docs
+
+# 允许渲染原始HTML
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# module
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+# Theme Config
+# nav menu
+menu:
+  main:
+    - name: ⭐首页
+      pageRef: /
+      weight: 1
+    - name: 📚指南
+      pageRef: /guide
+      weight: 2
+    - name: 🔧博客
+      pageRef: /blog
+      weight: 2
+    - name: 🎯项目
+      pageRef: /project
+      weight: 3
+    - name: 🐱螺丝工
+      pageRef: /about
+      weight: 3
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: Github
+      weight: 5
+      url: "https://github.com/QuasarMind-byte/"
+      params:
+        icon: github
+  # else sidebar
+  sidebar:
+    - name: 更多
+      params:
+        type: separator
+        weight: 1
+    - name: "关于"
+      url: "https://github.com/imfing/hextra/blob/main/README.zh-cn.md"
+      weight: 2
+    - name: "书单"
+      weight: 2
+
+# params
+params:
+  # 
+  editURL:
+    enable: true
+    base: "https://github.com/"
+  # 
+  theme:
+    default: system
+    displayToggle: true
+  # 
+  page:
+    width: wide
+
+# enable icon
+enableInlineShortcodes: true
+
+# 
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: 默认
+    weight: 1
+  fr:
+    languageName: FranCais
+    weight: 2
