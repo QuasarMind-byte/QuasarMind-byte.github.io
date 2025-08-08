@@ -1,6 +1,6 @@
 baseURL: https://quasarmind-byte.github.io/
 languageCode: en-us
-title：「Code Epistles」
+title: 「Code Epistles」
 
 buildDrafts: false
 buildFuture: false
