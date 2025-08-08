@@ -4,16 +4,17 @@ draft: true
 title: '🍁🍁🍁'
 layout: hextra-home
 ---
+<div style="padding-left: 2rem;">
 {{<hextra/hero-badge>}}❄️开启编程之旅~{{<icon "arrow-circle-right">}}{{</hextra/hero-badge>}}
-
+</div>
 </br>
 
-{{<center-container>}}{{<avatar src="/images/avatar.webp" name="Jay YI" text="个人技术成长记录|项目实践|学习笔记 link="link="https://github.com/QuasarMind-byte/">}}{{</center-container>}}
+{{<center-container>}}{{<avatar src="https://cdn.jsdelivr.net/gh/QuasarMind-byte/QuasarMind-byte.github.io@main/static/images/avatar.webp" name="Jay YI" text="个人技术成长记录|项目实践|学习笔记 link="link="https://github.com/QuasarMind-byte/">}}{{</center-container>}}
 
 {{<center-container>}}{{<icon name="cube-transparent" >}} {{<typewriter color="purple">}}{{</center-container>}}
 
 
-<div class="home-section" style="align-items: center; margin-left: 2rem">
+<div class="home-section" style="align-items: center; padding-left: 2rem">
 {{<hextra/hero-headline>}}🎨Hello-Docs{{</hextra/hero-headline>}}
 {{<hextra/hero-subtitle>}}极速且全能的Hugo主题框架{{</hextra/hero-subtitle>}}
 <br>

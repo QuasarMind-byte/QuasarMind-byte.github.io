@@ -5,3 +5,8 @@
 .content code:not(.code-block code) {
   color: #f08c29;
 }
+
+#backToTop {
+  font-weight: bold;
+  color: black;
+}

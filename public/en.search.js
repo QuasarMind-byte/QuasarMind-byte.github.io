@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
    * @returns {Promise<void>} A promise that resolves when the index is preloaded.
    */
   async function preloadIndex() {
-    const tokenize = 'forward';
+    const tokenize = 'full';
 
     const isCJK = () => {
       const lang = document.documentElement.lang || "en";

@@ -2,8 +2,9 @@
 date: '2025-08-07T16:28:56+08:00'
 draft: true
 title: '入门'
-cascade:
-  type: doc
+weight: 2
+prev: /guide/overview
+next: /guide/类与对象
 ---
 
 # II. Getting Started
