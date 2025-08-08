@@ -11,7 +11,7 @@ layout: hextra-home
 
 {{< qr_sidebar 
   text="扫描二维码关注" 
-  url="https://qm.qq.com/cgi-bin/qm/qr?k=QJ1R6bEJuekIP-oOaGxvCKF6y1PifU2f&s=1#" 
+  url="https://cdn.jsdelivr.net/gh/QuasarMind-byte/QuasarMind-byte.github.io@main/static/images/qr_share.webp" 
   position="right" 
   width="150" 
   top="30%"
