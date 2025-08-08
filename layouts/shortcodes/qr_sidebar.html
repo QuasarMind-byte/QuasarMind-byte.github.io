@@ -1,0 +1,452 @@
+{{ $position := .Get "position" | default "right" }}
+{{ $text := .Get "text" | default "扫描二维码访问移动版" }}
+{{ $url := .Get "url" | default .Site.BaseURL }}
+{{ $width := .Get "width" | default "150" }}
+{{ $top := .Get "top" | default "20%" }}
+{{ $color := .Get "color" | default "#4361ee" }}
+{{ $bgColor := .Get "bgColor" | default "#ffffff" }}
+
+<div id="qr-sidebar" class="qr-sidebar qr-{{ $position }}" 
+     style="--qr-top: {{ $top }}; --qr-color: {{ $color }}; --qr-bg: {{ $bgColor }}">
+  <!-- 桌面端视图 -->
+  <div class="desktop-view">
+    <div class="qr-toggle" onclick="toggleQR()">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M6,8 L6,20 C6,21.1 6.9,22 8,22 L16,22 C17.1,22 18,21.1 18,20 L18,8 L6,8 Z M16,4 L15,2 L9,2 L8,4 L3,4 L3,6 L21,6 L21,4 L16,4 Z" />
+      </svg>
+    </div>
+    
+    <div class="qr-content">
+      <div class="qr-header">
+        <span>扫码分享</span>
+        <button class="qr-close" onclick="closeQR()">×</button>
+      </div>
+      
+      <div class="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size={{ $width }}x{{ $width }}&data={{ $url }}&color={{ replace $color "#" "" }}&bgcolor={{ replace $bgColor "#" "" }}" 
+             alt="二维码" width="{{ $width }}">
+      </div>
+      
+      <div class="qr-text">{{ $text }}</div>
+      
+      <div class="qr-actions">
+        <button class="qr-btn" onclick="copyUrl()">复制链接</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 移动端视图 -->
+  <div class="mobile-view">
+    <div class="mobile-trigger" onclick="toggleMobileQR()">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path d="M6,8 L6,20 C6,21.1 6.9,22 8,22 L16,22 C17.1,22 18,21.1 18,20 L18,8 L6,8 Z M16,4 L15,2 L9,2 L8,4 L3,4 L3,6 L21,6 L21,4 L16,4 Z" />
+      </svg>
+      <span>扫码分享</span>
+    </div>
+    
+    <div class="mobile-overlay" onclick="closeMobileQR()"></div>
+    
+    <div class="mobile-content">
+      <div class="mobile-header">
+        <h3>扫码分享</h3>
+        <button class="mobile-close" onclick="closeMobileQR()">×</button>
+      </div>
+      
+      <div class="mobile-qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data={{ $url }}&color={{ replace $color "#" "" }}&bgcolor={{ replace $bgColor "#" "" }}" 
+             alt="二维码">
+      </div>
+      
+      <div class="mobile-text">{{ $text }}</div>
+      
+      <div class="mobile-actions">
+        <button class="mobile-btn" onclick="copyUrl()">复制链接</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  :root {
+    --qr-bg: #ffffff;
+    --qr-color: #4361ee;
+    --qr-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    --qr-border-radius: 12px;
+    --qr-transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  
+  /* 桌面端样式 */
+  .desktop-view {
+    display: block;
+  }
+  
+  .mobile-view {
+    display: none;
+  }
+  
+  .qr-sidebar {
+    position: fixed;
+    top: var(--qr-top);
+    z-index: 999;
+    display: flex;
+    transition: var(--qr-transition);
+  }
+  
+  .qr-left {
+    left: 0;
+    transform: translateX(calc(-100% + 50px));
+  }
+  
+  .qr-right {
+    right: 0;
+    transform: translateX(calc(100% - 50px));
+  }
+  
+  .qr-sidebar:hover,
+  .qr-sidebar.qr-active {
+    transform: translateX(0);
+  }
+  
+  .qr-toggle {
+    width: 50px;
+    height: 50px;
+    background: var(--qr-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px 0 0 8px;
+    box-shadow: var(--qr-shadow);
+  }
+  
+  .qr-right .qr-toggle {
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .qr-toggle svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .qr-content {
+    width: 200px;
+    background: var(--qr-bg);
+    padding: 20px;
+    border-radius: 0 12px 12px 0;
+    box-shadow: var(--qr-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .qr-right .qr-content {
+    border-radius: 12px 0 0 12px;
+  }
+  
+  .qr-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    color: var(--qr-color);
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .qr-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+    line-height: 1;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .qr-close:hover {
+    color: #ff6b6b;
+  }
+  
+  .qr-code {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+  }
+  
+  .qr-code img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .qr-text {
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  
+  .qr-actions {
+    width: 100%;
+  }
+  
+  .qr-btn {
+    width: 100%;
+    padding: 8px 12px;
+    background: var(--qr-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .qr-btn:hover {
+    background: #3a56d4;
+  }
+  
+  /* 移动端样式 */
+  @media (max-width: 768px) {
+    .desktop-view {
+      display: none;
+    }
+    
+    .mobile-view {
+      display: block;
+    }
+    
+    .qr-sidebar {
+      position: fixed;
+      bottom: 0;
+      top: auto !important;
+      left: 0;
+      right: 0;
+      transform: none !important;
+      width: 100%;
+      z-index: 1000;
+    }
+    
+    .mobile-trigger {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--qr-color);
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 12px 18px;
+      border-radius: 50px;
+      box-shadow: var(--qr-shadow);
+      cursor: pointer;
+      z-index: 1001;
+      transition: transform 0.3s ease;
+    }
+    
+    .mobile-trigger:hover {
+      transform: translateY(-3px);
+    }
+    
+    .mobile-trigger svg {
+      fill: white;
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+    
+    .mobile-trigger span {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    
+    .mobile-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(5px);
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .mobile-content {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background: var(--qr-bg);
+      border-radius: 24px 24px 0 0;
+      box-shadow: 0 -5px 25px rgba(0,0,0,0.15);
+      padding: 25px;
+      z-index: 1000;
+      transition: bottom 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .mobile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .mobile-header h3 {
+      color: var(--qr-color);
+      font-size: 1.4rem;
+      margin: 0;
+    }
+    
+    .mobile-close {
+      background: none;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: #888;
+      line-height: 1;
+      padding: 0;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .mobile-close:hover {
+      color: #ff6b6b;
+    }
+    
+    .mobile-qr-code {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      margin: 0 auto 20px;
+      max-width: 220px;
+    }
+    
+    .mobile-qr-code img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    
+    .mobile-text {
+      text-align: center;
+      color: #555;
+      font-size: 16px;
+      margin-bottom: 25px;
+      line-height: 1.5;
+      padding: 0 15px;
+    }
+    
+    .mobile-actions {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    
+    .mobile-btn {
+      width: 100%;
+      padding: 14px 20px;
+      background: var(--qr-color);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    
+    .mobile-btn:hover {
+      background: #3a56d4;
+    }
+    
+    /* 激活状态 */
+    .mobile-active .mobile-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .mobile-active .mobile-content {
+      bottom: 0;
+    }
+  }
+</style>
+
+<script>
+  // 桌面端功能
+  function toggleQR() {
+    const sidebar = document.getElementById('qr-sidebar');
+    sidebar.classList.toggle('qr-active');
+  }
+  
+  function closeQR() {
+    const sidebar = document.getElementById('qr-sidebar');
+    sidebar.style.display = 'none';
+    setCookie("qrSidebarClosed", "true", 7);
+  }
+  
+  // 移动端功能
+  function toggleMobileQR() {
+    const sidebar = document.getElementById('qr-sidebar');
+    sidebar.classList.add('mobile-active');
+  }
+  
+  function closeMobileQR() {
+    const sidebar = document.getElementById('qr-sidebar');
+    sidebar.classList.remove('mobile-active');
+  }
+  
+  // 通用功能
+  function copyUrl() {
+    const url = "{{ $url }}";
+    navigator.clipboard.writeText(url).then(() => {
+      const btn = document.querySelector('.qr-btn, .mobile-btn');
+      const originalText = btn.textContent;
+      btn.textContent = '✓ 已复制!';
+      setTimeout(() => {
+        btn.textContent = originalText;
+      }, 2000);
+    });
+  }
+  
+  function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    document.cookie = name + "=" + value + "; expires=" + date.toUTCString() + "; path=/";
+  }
+  
+  // 检查cookie决定是否显示
+  document.addEventListener('DOMContentLoaded', () => {
+    const cookies = document.cookie.split(';');
+    const isClosed = cookies.some(cookie => cookie.trim().startsWith('qrSidebarClosed='));
+    
+    if (isClosed) {
+      document.getElementById('qr-sidebar').style.display = 'none';
+    }
+    
+    // 点击移动端遮罩关闭二维码
+    document.querySelector('.mobile-overlay').addEventListener('click', closeMobileQR);
+    
+    // 阻止移动端内容区域点击事件冒泡
+    document.querySelector('.mobile-content').addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  });
+</script>
