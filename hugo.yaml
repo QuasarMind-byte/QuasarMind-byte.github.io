@@ -88,8 +88,6 @@ params:
   logo:
     path: favicon.svg
     dark: favicon-dark.svg
-    width: 40
-    height: 20
     link: /
   width: wide
   
