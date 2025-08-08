@@ -20,7 +20,7 @@ layout: hextra-home
 
 {{<center-container>}}{{<icon name="cube-transparent" >}} {{<typewriter color="rgba(217, 37, 217, 0.666)">}}{{</center-container>}}
 
-{{<hextra/hero-headline>}}🎨Jay‘s Site{{</hextra/hero-headline>}}
+{{<hextra/hero-headline>}}🎨代码诗笺{{</hextra/hero-headline>}}
 {{<hextra/hero-subtitle>}}分享|记录日常生活{{</hextra/hero-subtitle>}}
 <br>
 
