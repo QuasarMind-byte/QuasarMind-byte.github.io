@@ -1,6 +1,6 @@
 baseURL: https://quasarmind-byte.github.io/
 languageCode: en-us
-title: My static Docs
+title: 月光代码
 
 buildDrafts: false
 buildFuture: false
