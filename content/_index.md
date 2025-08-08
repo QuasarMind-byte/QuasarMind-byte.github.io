@@ -21,7 +21,7 @@ layout: hextra-home
 {{<center-container>}}{{<icon name="cube-transparent" >}} {{<typewriter color="rgba(217, 37, 217, 0.666)">}}{{</center-container>}}
 
 {{<hextra/hero-headline>}}🎨代码诗笺{{</hextra/hero-headline>}}
-{{<hextra/hero-subtitle>}}分享|记录日常生活{{</hextra/hero-subtitle>}}
+{{<hextra/hero-subtitle>}}✔分享|记录日常生活{{</hextra/hero-subtitle>}}
 <br>
 
 {{<hextra/hero-subtitle style="color: rgba(217, 37, 217, 0.666); font-size: 28px">}}✨Welcome👋{{</hextra/hero-subtitle>}}
