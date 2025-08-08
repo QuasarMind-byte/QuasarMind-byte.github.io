@@ -51,7 +51,7 @@ menu:
     - name: 🎯项目
       pageRef: /project
       weight: 4
-    - name: 🐱螺丝工
+    - name: 🧑‍🌾码农
       pageRef: /about
       weight: 5
     - name: Search
