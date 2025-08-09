@@ -257,7 +257,7 @@
       border-radius: 50px;
       box-shadow: var(--qr-shadow);
       cursor: pointer;
-      z-index: 1000;
+      z-index: 1001;
       transition: transform 0.3s ease;
     }
     
@@ -413,12 +413,22 @@
   //二维码弹窗控制函数
   function toggleMobileQR() {
     const sidebarMobile = document.getElementById('qr-sidebar');
+    const mobileTrigger = document.querySelector('.mobile-trigger');
     sidebarMobile.classList.add('mobile-active');
+    // alert(mobileTrigger);
+    mobileTrigger.style.opacity = 0;
+    mobileTrigger.style.visibility = hidden;
+  
   }
   
   function closeMobileQR() {
     const sidebar = document.getElementById('qr-sidebar');
     sidebar.classList.remove('mobile-active');
+    const mobileTrigger = document.querySelector('.mobile-trigger');
+    // alert(mobileTrigger);
+    mobileTrigger.style.opacity = 1;
+    mobileTrigger.style.visibility = visible;
+    
   }
   
   // 通用功能
