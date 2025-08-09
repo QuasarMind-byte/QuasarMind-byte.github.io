@@ -1,13 +1,12 @@
 ---
 date: '2025-08-08T10:20:01+08:00'
-title: 'Example Api 2'
+title: 'A Walk Through Hyde Park' 
 comments: true
 cascade:
   type: blog
 ---
 
-# Blog Day1
- 键盘侠客行🧑‍🌾
+键盘侠客行🧑‍🌾
  ![star-sky](space.jpg)
 
 ## Morning Serenity: A Walk Through Hyde Park  
