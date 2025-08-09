@@ -7,7 +7,7 @@ cascade:
 
 # Blog Day1
  键盘侠客行🧑‍🌾
- ![star-sky](space.jpg “🌟星空”)
+ ![star-sky](space.jpg)
 
 ## Morning Serenity: A Walk Through Hyde Park  
 **Date:** October 26, 2023 • **Weather:** Crisp 10°C, golden autumn sunlight  
