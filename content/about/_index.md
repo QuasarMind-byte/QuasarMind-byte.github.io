@@ -5,7 +5,7 @@ title: '🌾键盘侠客行'
 
 {{< qr_sidebar 
   text="扫描二维码关注" 
-  url="https://example.com" 
+  url="https://github.com/QuasarMind-byte/vortexbuilder.github.io" 
   position="right" 
   width="150" 
   top="30%"
