@@ -3,8 +3,6 @@ date: '2025-08-07T13:43:17+08:00'
 title: '🍁🍁🍁'
 layout: hextra-home
 ---
-<div class="container-home" style="margin: 0 auto; width: 100%; max-width: 1200px;">
-{{<hextra/hero-badge>}}❄️开启编程之旅~{{<icon "arrow-circle-right">}}{{</hextra/hero-badge>}}
 
 {{<announcement>}}
 ## 🚀 重要公告！
@@ -13,6 +11,11 @@ layout: hextra-home
 - 系统维护通知
 - 特别活动提醒
 {{</announcement>}}
+
+<div class="container-home" style="margin: 0 auto; width: 100%; max-width: 1200px;">
+{{<hextra/hero-badge>}}❄️开启编程之旅~{{<icon "arrow-circle-right">}}{{</hextra/hero-badge>}}
+
+
 </br></br>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🔥✨&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🎉&nbsp;&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;🔥</p>
 {{<center-container>}}{{<avatar src="https://cdn.jsdelivr.net/gh/QuasarMind-byte/QuasarMind-byte.github.io@main/static/images/avatar.webp" name="Jay YI" text="个人技术成长记录|项目实践|学习笔记 link="link="https://github.com/QuasarMind-byte/">}}{{</center-container>}}
