@@ -19,14 +19,6 @@ layout: hextra-home
 <p style="padding-top: 8px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🔥✨&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🎉&nbsp;&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;🔥</p>
 {{<center-container>}}{{<avatar src="https://cdn.jsdelivr.net/gh/QuasarMind-byte/QuasarMind-byte.github.io@main/static/images/avatar.webp" name="Jay YI" text="个人技术成长记录|项目实践|学习笔记 link="link="https://github.com/QuasarMind-byte/">}}{{</center-container>}}
 
-{{/*< qr_sidebar 
-  text="扫描二维码关注" 
-  url="https://github.com/QuasarMind-byte/vortexbuilder.github.io" 
-  position="right" 
-  width="150" 
-  top="30%"
-  color="#4361ee"
-  bgColor="#ffffff">*/}}
 
 {{<center-container>}}{{<icon name="cube-transparent" >}} {{<typewriter color="rgba(226, 136, 34, 0.67)">}}{{</center-container>}}
 
