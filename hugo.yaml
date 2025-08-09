@@ -117,6 +117,26 @@ params:
     displayPoweredBy: true
     width: normal
 
+  # 启用giscus
+  comments:
+    enable: true
+    type: giscus
+
+    giscus:
+      repo: QuasarMind-byte/QuasarMind-byte.github.io
+      repoId: R_kgDOPaAm4w
+      category: Announcements
+      categoryId: DIC_kwDOPaAm484Ct71e
+      mapping: pathname
+      strict: 0
+      reactionsEnabled: 1
+      emitMetadata: 0
+      inputPosition: top
+      theme: preferred_color_scheme
+      lang: zh-CN 
+      crossorigin: anonymous
+
+
   blog:
     list:
       displayTags: true
