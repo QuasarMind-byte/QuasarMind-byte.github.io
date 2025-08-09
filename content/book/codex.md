@@ -1,6 +1,9 @@
 ---
 title: "编程书籍"
+weight: 1
 comments: true
+cascade:
+  type: docs
 ---
 
 

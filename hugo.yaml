@@ -51,7 +51,7 @@ menu:
     - name: 🎯项目
       pageRef: /project
       weight: 4
-    - name: 🌾键盘侠客行
+    - name: 🧑‍🌾键盘侠客行
       pageRef: /about
       weight: 5
     - name: Search
@@ -82,15 +82,6 @@ menu:
 
 # params
 params:
-  # navbar
-  displayTitle: true
-  displayLogo: true
-  logo:
-    path: favicon.svg
-    dark: favicon-dark.svg
-    link: /
-  width: wide
-  
   # 搜索
   search:
     enable: true
@@ -110,36 +101,35 @@ params:
   # 
   page:
     width: wide
+    tabs:
+      sync: true
   # 
   footer:
     enable: true
     displayCopyright: true
     displayPoweredBy: true
     width: normal
-  # comments
-  comments:
-    enable: false
-    type: giscus
 
-    giscus:
-      repo: QuasarMind-byte/QuasarMind-byte.github.io
-      repoId: R_kgDOPaAm4w
-      category: Announcements
-      categoryId: DIC_kwDOPaAm484Ct71e
-      mapping: pathname
-      strict: 0
-      reactionEnabled: 1
-      emitPosition: 0
-      inputPosition: top
-      theme: preferred_color_scheme
-      lang: zh-CN
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: asc # or "desc"
+      # Pagination
+      pagerSize: 20
 
+    article:
+      displayPagination: true
 
+  toc:
+    displayTags: true
 
-
-
-
-
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
 
 # enable icon
 enableInlineShortcodes: true
@@ -156,25 +146,4 @@ languages:
 
 
 displayUpdatedDate: true
-dateFormat: "January 2, 2024"
-
-blog:
-    list:
-      displayTags: true
-      # date | lastmod | publishDate | title | weight
-      sortBy: date
-      sortOrder: desc # or "asc"
-      # Pagination
-      pagerSize: 20
-
-    article:
-      displayPagination: true
-
-toc:
-    displayTags: true
-
-highlight:
-    copy:
-      enable: true
-      # hover | always
-      display: hover
+dateFormat: "January 2, 2024 "

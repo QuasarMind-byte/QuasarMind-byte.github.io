@@ -1,6 +1,9 @@
 ---
 title: "小说推荐卡"
 comments: true
+height: 2
+cascade:
+  type: docs
 ---
 
 # 💕小说

@@ -1,6 +1,8 @@
 ---
 title: Servlet技术详解
-weight: 1
+weight: 2
+cascade:
+  type: docs
 ---
 
 # Servlet技术详解
@@ -62,7 +64,7 @@ classDiagram
 	HttpServlet --> HttpServletResponse : 使用
 ```
 
-:pushpin:**类图解析**：
+📌**类图解析**：
 
 1. **核心接口**
    - **Servlet**：定义生命周期方法（init、Service、destory）
@@ -78,7 +80,7 @@ classDiagram
 
 > [!NOTE]
 >
-> :bulb:**设计思想**：通过分层抽象（接口 -> 通用类 -> 协议类 -> 业务类 ）实现高扩展性。
+> 💡**设计思想**：通过分层抽象（接口 -> 通用类 -> 协议类 -> 业务类 ）实现高扩展性。
 
 
 
@@ -110,7 +112,7 @@ sequenceDiagram
 		WebServer -->> Client: 200 OK+ HTML内容
 ```
 
-:pushpin:**时序图解析**：
+📌**时序图解析**：
 
 1. **请求传递**
 
@@ -167,7 +169,7 @@ flowchart TD
 	N --> O[结束]
 ```
 
-:pushpin:**活动图解析**：
+📌**活动图解析**：
 
 1. **请求路由阶段**
    - 容器解析 URL 路径 -> 匹配 `web.xml`或 注解配置的Servlet
@@ -193,6 +195,6 @@ flowchart TD
 | **优化实践** | 使用 `Filter`处理通用逻辑（如编码设置）、`Listener`监听上下文事件 |
 | **典型流程** | 请求 -> 容器创建 req/res -> 调用 `service()` -> 业务处理 -> 输出响应 -> 销毁临时对象 |
 
->:fire: **进阶理解**：
+>🔥 **进阶理解**：
 >
 >`Servlet`本质是 **java对CGI的进化**，通过**常驻内存 + 线程池**解决CGI的进程创建开销问题，成为Java Web技术的基石。

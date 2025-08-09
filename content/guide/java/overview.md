@@ -1,10 +1,10 @@
 ---
 date: '2025-08-07T16:28:56+08:00'
 title: '概述'
-weight: 4
+weight: 1
 cascade:
-  type: blog
-next: /java/概述
+  type: docs
+pre: /java笔记
 ---
 
 第一章目录：
