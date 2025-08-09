@@ -56,7 +56,7 @@ I'm a <code style="color: orange;">`developer`</code> and <code style="color: or
 {{<hextra/feature-grid>}}
 {{<hextra/feature-card link="guide/front-end" title="🎬前端" subtitle="前端技术学习记录</br> HTML/CSS   ` |` JavaScript `|` Vue " class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]" style="background: radial-gradient(ellipse at 50% 80%,rgba(246, 82, 7, 0.15),hsla(17, 97%, 52%, 0.00));">}}
 {{<hextra/feature-card link="guide/java" title="🚀后端" subtitle="后端技术学习记录 </br>Java` |` Go` |` Mysql `|` Spring" class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]" style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));">}}
-{{<hextra/feature-card link="/project" title="🌟项目Star" subtitle="项目架构</br>参观 `Github`" class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]" style="background: radial-gradient(ellipse at 50% 80%,rgba(126, 254, 97, 0.15),hsla(95, 72%, 66%, 0.00));">}}
+{{<hextra/feature-card link="/project" title="🌟项目Star｜工作经验" subtitle="项目架构学习</br>参观 `Github`</br>Work Experience"class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]" style="background: radial-gradient(ellipse at 50% 80%,rgba(126, 254, 97, 0.15),hsla(95, 72%, 66%, 0.00));">}}
 {{<hextra/feature-card link="/book" title="♊书籍阅读" subtitle="阅读书籍记录" >}}
 {{<hextra/feature-card link="/" title="🧭美图" subtitle="美图记录" >}}
 {{<hextra/feature-card link="/" title="🗺️杂记" subtitle="日常生活记录" >}}
