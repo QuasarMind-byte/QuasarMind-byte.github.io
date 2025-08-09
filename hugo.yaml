@@ -127,7 +127,7 @@ params:
       repoId: R_kgDOPaAm4w
       category: Announcements
       categoryId: DIC_kwDOPaAm484Ct71e
-      mapping: pathname
+      mapping: title
       strict: 0
       reactionsEnabled: 1
       emitMetadata: 0
