@@ -82,6 +82,13 @@ menu:
 
 # params
 params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/favicon.svg
+      dark: images/favicon-dark.svg
+    width: wide
   # 搜索
   search:
     enable: true
