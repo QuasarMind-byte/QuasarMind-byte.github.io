@@ -257,7 +257,7 @@
       border-radius: 50px;
       box-shadow: var(--qr-shadow);
       cursor: pointer;
-      z-index: 1001;
+      z-index: 1000;
       transition: transform 0.3s ease;
     }
     
@@ -412,8 +412,8 @@
   // 移动端功能
   //二维码弹窗控制函数
   function toggleMobileQR() {
-    const sidebar = document.getElementById('qr-sidebar');
-    sidebar.classList.add('mobile-active');
+    const sidebarMobile = document.getElementById('qr-sidebar');
+    sidebarMobile.classList.add('mobile-active');
   }
   
   function closeMobileQR() {
