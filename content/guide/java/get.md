@@ -2,8 +2,6 @@
 date: '2025-08-07T16:28:56+08:00'
 title: '入门'
 weight: 2
-cascade:
-  type: docs
 ---
 
 # II. Getting Started

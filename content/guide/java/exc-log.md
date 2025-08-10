@@ -1,8 +1,6 @@
 ---
 title: "异常|日志|调试"
 weight: 7
-cascade:
-  type: docs
 ---
 
 # Java核心基础卷5

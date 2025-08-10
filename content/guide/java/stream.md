@@ -1,8 +1,6 @@
 ---
 title: "流-Stream"
 height: 9
-cascade:
-  type: docs
 ---
 
 # Java核心基础卷7

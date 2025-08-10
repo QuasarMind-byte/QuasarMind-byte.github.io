@@ -2,16 +2,21 @@
 date: '2025-08-08T10:20:01+08:00'
 title: 'A Walk Through Hyde Park' 
 comments: true
+authors:
+  - name: Jay
+    link: 
+tags:
+  - Lifestyle
+  - 示例
+  - 分享记录生活
 cascade:
   type: blog
 ---
-
-键盘侠客行🧑‍🌾
- ![star-sky](space.jpg)
-
 ## Morning Serenity: A Walk Through Hyde Park  
 **Date:** October 26, 2023 • **Weather:** Crisp 10°C, golden autumn sunlight  
 
+ ![star-sky](space.jpg)
+ 🧑‍🌾                       
 The city still slumbered as I laced up my walking shoes at 6:15 AM. London’s pre-dawn hush is a rare gift – just distant hums of delivery trucks and the rhythmic *tap-tap* of my footsteps echoing down Kensington Gore. By the time I reached Hyde Park’s Queen’s Gate, my breath crystallized in the air like tiny ghosts chasing freedom.  
 
 **Nature’s Subtle Drama Unfolded:**  

@@ -1,6 +1,8 @@
 ---
 title: "Java笔记"
 weight: 1
+cascade:
+  type: docs
 ---
 
 # Java 基础卷

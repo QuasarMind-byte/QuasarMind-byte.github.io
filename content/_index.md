@@ -14,7 +14,7 @@ layout: hextra-home
 {{</announcement>}}
 
 <div class="container-home" style="margin: 0 auto; width: 100%; max-width: 1200px;">
-{{<hextra/hero-badge link="/guide">}}❄️开启编程之旅~{{<icon "arrow-circle-right">}}{{</hextra/hero-badge>}}
+{{<hextra/hero-badge>}}❄️开启编程之旅~{{<icon "arrow-circle-right">}}{{</hextra/hero-badge>}}
 
 <p style="padding-top: 8px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🔥✨&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🎉&nbsp;&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;🔥</p>
 {{<center-container>}}{{<avatar src="https://cdn.jsdelivr.net/gh/QuasarMind-byte/QuasarMind-byte.github.io@main/static/images/avatar.webp" name="Jay YI" text="未经省察的人生不值得过" link= "https://github.com/QuasarMind-byte/vortexbuilder.github.io ">}}{{</center-container>}}
@@ -33,7 +33,7 @@ I'm a <code style="color: orange;">`developer`</code> and <code style="color: or
 </br>
 {{<hextra/hero-subtitle style="color: rgba(217, 37, 217, 0.666); font-size: 28px">}}✨My development concept🎯{{</hextra/hero-subtitle>}}
 
-```js
+```js {filename = "Title" linenos = "table"}
   function fun(){
     console.log("It's not a bug – it's an undocumented feature.")
   }

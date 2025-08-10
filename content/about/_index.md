@@ -11,14 +11,18 @@ title: '🌾键盘侠客行'
   top="30%"
   color="#4361ee"
   bgColor="#ffffff">}}
-  
-## ENLISH: [Quasar YI]
 
-## 中文: [JiCai YI]
 
-| 📧 邮箱              | 📱 电话         | 🌐 个人网站/GitHub                  | 📍 城市    |
-| ------------------- | -------------- | ---------------------------------- | --------- |
-| moonlit_sky@163.com | **193XXX4969** | https://github.com/QuasarMind-byte | **China** |
+##  JiCai YI
+###  Quasar YI
+![GitHub](https://img.shields.io/github/followers/QuasarMind-byte?label=Follow&style=social)![Java](https://img.shields.io/badge/Java-v17%2B-violet)
+
+
+| 📧 邮箱              | 📱 电话         | 🌐 GitHub                  | 📎个人网站    | 📍 城市 |
+| :------------------ | :------------- | :--------------------------------- | :-------------- | :------------------ |
+| moonlit_sky@163.com | **193XXX4969** | https://github.com/QuasarMind-byte | https://walnut-520.netlify.app | **WuHan-China** |
+
+</br>
 
 ---
 

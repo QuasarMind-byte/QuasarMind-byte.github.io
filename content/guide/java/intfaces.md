@@ -1,8 +1,6 @@
 ---
 title: "接口、Lambda | 内部类"
 weight: 6
-cascade:
-  type: docs
 ---
 
 # Java核心基础卷4

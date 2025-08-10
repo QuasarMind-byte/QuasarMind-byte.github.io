@@ -48,10 +48,10 @@ menu:
     - name: 🔧博客
       pageRef: /blog
       weight: 3
-    - name: 🎯项目
+    - name: 🎯经验
       pageRef: /project
       weight: 4
-    - name: 🧑‍🌾键盘侠客行
+    - name: 🌾键盘侠客行
       pageRef: /about
       weight: 5
     - name: Search
@@ -144,7 +144,7 @@ params:
       sortBy: date
       sortOrder: asc # or "desc"
       # Pagination
-      pagerSize: 20
+      pagerSize: 15
 
     article:
       displayPagination: true
@@ -157,6 +157,7 @@ params:
       enable: true
       # hover | always
       display: hover
+
 
 # enable icon
 enableInlineShortcodes: true
@@ -173,4 +174,4 @@ languages:
 
 
 displayUpdatedDate: true
-dateFormat: "January 2, 2024 "
+dateFormat: "2006-01-02"

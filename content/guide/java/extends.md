@@ -1,8 +1,6 @@
 ---
 title: "继承 | 类结构"
 weight: 5
-cascade:
-  type: docs
 ---
 
 # 继承

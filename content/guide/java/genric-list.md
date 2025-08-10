@@ -1,8 +1,6 @@
 ---
 title: "泛型 | 集合"
 weight: 8
-cascade:
-  type: docs
 ---
 
 # Java核心基础卷6

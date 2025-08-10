@@ -1,8 +1,6 @@
 ---
 title: Servlet技术详解
 weight: 2
-cascade:
-  type: docs
 ---
 
 # Servlet技术详解

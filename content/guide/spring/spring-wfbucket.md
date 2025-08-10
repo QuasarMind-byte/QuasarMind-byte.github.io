@@ -1,8 +1,6 @@
 ---
 title: "Spring 全家桶"
 weight: 1
-cascade:
-  type: docs
 ---
 
 
