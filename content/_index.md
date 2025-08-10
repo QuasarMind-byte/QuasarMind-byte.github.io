@@ -17,7 +17,7 @@ layout: hextra-home
 {{<hextra/hero-badge>}}❄️开启编程之旅~{{<icon "arrow-circle-right">}}{{</hextra/hero-badge>}}
 
 <p style="padding-top: 8px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🔥✨&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🎉&nbsp;&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✨&nbsp;&nbsp;&nbsp;&nbsp;🔥</p>
-{{<center-container>}}{{<avatar src="https://cdn.jsdelivr.net/gh/QuasarMind-byte/QuasarMind-byte.github.io@main/static/images/avatar.webp" name="Jay YI" text="未经省察的人生不值得过" link= "https://github.com/QuasarMind-byte/vortexbuilder.github.io ">}}{{</center-container>}}
+{{<center-container>}}{{<avatar src="https://cdn.jsdelivr.net/gh/QuasarMind-byte/QuasarMind-byte.github.io@main/static/images/avatar.webp" name="Jay YI" text="未经省察的人生不值得过" link= "/about ">}}{{</center-container>}}
 
 
 {{<center-container>}}{{<icon name="cube-transparent" >}} {{<typewriter color="rgba(226, 136, 34, 0.67)">}}{{</center-container>}}
