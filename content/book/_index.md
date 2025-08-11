@@ -7,6 +7,6 @@ cascade:
 
 # 目录
 {{<cards>}} 
-{{<card link="/programming" title="编程类书籍" icon="document-duplicate">}} 
+{{<card link="book/programming" title="编程类书籍" icon="document-duplicate">}} 
 {{<card link="/book/novels" title="小说 | 其他书籍" icon="document-duplicate">}}
 {{</cards>}}
