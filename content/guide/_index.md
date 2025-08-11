@@ -8,7 +8,7 @@ cascade:
 
 # 目录
 {{<cards>}} 
-{{<card link="../guide/java" title="Java笔记" icon="document-duplicate">}} 
+{{<card link="./java" title="Java笔记" icon="document-duplicate">}} 
 {{<card link="../guide/webstudy" title="Web学习" icon="document-duplicate">}}
 {{<card link="../guide/spring" title="Spring笔记" icon="document-duplicate">}}
 {{<card link="../guide/front-end" title="前端" icon="document-duplicate">}}
